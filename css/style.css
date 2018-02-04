@@ -14,6 +14,7 @@ body a{
 iframe{
 	margin:40px;
 }
+
 /*-----start-header----*/
 .header{
 	background:#FD6887;
@@ -497,7 +498,7 @@ span.second{
 }
 .section-head p{
 	width: 95%;
-	margin: 3em auto 1.2em auto;
+	margin: 5px;
 	color: #282528;
 	line-height: 1.8em;
 	font-size: 1.1em;
@@ -673,7 +674,7 @@ span.second{
 /*---- featured -----*/
 .featured{
 	background:#FD6887;
-	padding:2em 0 10em;
+	padding:2em 0 2em;
 }
 .featured h3{
 	margin-bottom:3em;
@@ -1255,4 +1256,12 @@ p.copy a:hover{
 	.getintouch {
 		padding: 0em 0 0 0;
 	}
+}
+
+p{
+	margin: 0px;
+}
+h4{
+	margin-top: 50px;
+	text-align: center;
 }
