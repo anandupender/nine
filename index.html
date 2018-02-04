@@ -1,0 +1,502 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NINE | ME115B Project</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link rel="shortcut icon" href="images/fav.png" />	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!--webfonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+		<!--//webfonts-->
+		<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!--//End-top-nav-script-->
+</head>
+	<body>
+		<!--start-container-->
+		<!--header-section--->
+		<div class="header-section">
+			<!-- start-header-->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="top-header">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" title="logo" /></a>
+						</div>
+						<!--start-top-nav-->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li class="page-scroll"><a href="#fea" class="scroll">FEATURES</a></li>
+								<li class="page-scroll"><a href="#gallery" class="scroll">Gallery</a></li>
+								<li class="page-scroll"><a href="#about" class="scroll">About </a></li>
+								<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-- //End-header-->
+			<!-- start-slider-->
+			<!--start-slider-script-->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--//End-slider-script-->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/background.png" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>Introducing <span>NINE.</span></h1>
+			          		<h2>Pregnancy Planning. Made Nostalgic.</h2>
+			          		<div class="slide-text">
+			          			<ul>
+			          				<li><span> </span>Remember the important milestones in your nine months</li>
+			          				<li><span> </span>Capture memories of your strenuous journey to share with your family</li>
+			          			</ul>
+			          		</div>
+			          		<div class="clearfix"> </div>
+			          		<div class="big-btns">
+			          			<a class="download" href="https://invis.io/VCFK0OIY68T" target="_blank"><label> </label>Download</a>
+			          			<a class="view" href="https://invis.io/VCFK0OIY68T" target="_blank"><label> </label>Vew Gallery</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			    <!--divice-->
+			    	<div class="divice-demo">
+			    		<img src="images/divice-in-hand.png" title="demo" />
+			    	</div>
+			    <!--//divice-->
+			<!-- //End-slider-->
+			</div>
+			<!--//header-section-->
+			<!--features-->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span> What is it?<span class="second"> </span></h3>
+						<p>We are making NINE beacause we understand the excitement and fears behind planning to have a child. We want to help alleviate parents' fears of missing key steps along their pregnancy. At the same time, NINE helps you create a comprehensive set of memories from your pregnancy journey.</p>
+					</div>
+					<!--features-grids-->
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<span class="f-icon0"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4></h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<span class="f-icon1"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<span class="f-icon2"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+						</div><!--end-features-grid-->
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/iphoneHome.png" title="features-demo" />
+							</div>
+						</div><!--end-features-grid-->
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<span class="f-icon3"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<span class="f-icon4"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<span class="f-icon5"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+						</div><!--end-features-grid-->
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!--//features-grids-->
+					<!--//features-->
+					<!--screen-shot-gallery-->
+					<div id="gallery" class="screen-shot-gallery">
+						<div class="container">
+							<div class="section-head text-center">
+								<h3><span class="frist"> </span>Our 3 Flows<span class="second"> </span></h3>
+								<p>Our design has gone through 3 iterations of user testing with mothers and fathers and it is being updated weekly. <br> 1. Personalize the app to your family's stage in the pregnancy <br> 2. Complete or add a pregnancy goal, capturing a photo memory along the way <br> 3. Visualize your collection of memories in a photo book form </p>
+
+							</div>
+						</div>
+						<!--sreen-gallery-cursual-->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 3,
+							        lazyLoad : true,
+							        autoPlay : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/1.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/2.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/3.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/4.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/5.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/6.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/7.png" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/8.png" alt="screen-name">
+					                </div>
+					            `	<div class="item">
+					                	<img class="lazyOwl" data-src="images/iphone/9.png" alt="screen-name">
+					                </div>
+				              </div>
+						</div>
+						<!--//sreen-gallery-cursual-->
+					</div>
+				</div>
+				<!--//screen-shot-gallery-->
+				<!-- show-reel -->
+				<!--pop-up-box-->
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!--//pop-up-box-->
+
+				<div class="show-reel text-center">
+
+					<div class="container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/SBS0GN0Tpj8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					 <script>
+							$(document).ready(function() {
+							$('.popup-with-zoom-anim').magnificPopup({
+								type: 'inline',
+								fixedContentPos: false,
+								fixedBgPos: true,
+								overflowY: 'auto',
+								closeBtnInside: true,
+								preloader: false,
+								midClick: true,
+								removalDelay: 300,
+								mainClass: 'my-mfp-zoom-in'
+							});
+																							
+							});
+					</script>	
+					</div>
+				</div>
+				<!-- //show-reel -->
+				<!--team-->
+				<div id="about" class="team">
+					<div class="container">
+						<div class="section-head text-center">
+							<h3><span class="frist"> </span>OUR PROCESS AND POV<span class="second"> </span></h3>
+							<p>HMW alleviate the fear new parents have of forgetting to hit all the important “steps” in having a baby? <br> HMW help parents capture the beautiful but often undocumented and grueling experience of the pregnancy, pre-birth?</p>
+						</div>
+					</div>
+					<!--team-members-->
+					<div class="team-members">
+						<div class="container">
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/storyboard.JPG" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/interview1.PNG" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/interview2.PNG" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/interview3.PNG" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+								<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/storyboard1.jpeg" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/storyboard3.jpeg" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/interview4.png" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+							<div class="col-md-3 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/poster.JPG" title="name" />						
+								</div>
+							</div><!-- end-team-member -->
+							<div class="clearfix"> </div>
+						</div>
+							<div class="clearfix"> </div>
+					<!--//team-members-->
+					</div>
+				</div>
+				<!--//team-->
+				<div class="clearfix"> </div>
+				<!--people-says-->
+					<div class="test-monials text-center">
+						<div class="container">
+							<div class="section-head text-center">
+								<h3><span class="frist"> </span>PEOPLE BEHIND THE APP<span class="second"> </span></h3>
+						</div>
+						</div>
+						<div class="container">
+							<span><img src="images/icon1.png" title="quit"/></span>
+						<script>
+							    $(document).ready(function() {
+							      $("#owl-demo1").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        itemsDesktop : 2,
+							      });
+							    });
+						 </script>
+						<div id="owl-demo1" class="owl-carousel">
+					       <div class="item">
+					          <p>We did collect memories in pregnancy. We took a couple ultrasounds. So it was nice keeping those. I can also remember going to buy things with my mom.</p>
+					     		<div class="quit-people">
+					     			<h4><a href="#"> Mother of 2</a></h4>
+					     			<span>insight: Parents are already in the behavioral mindset of collecitng photo memories</span>
+					     		</div>
+					       </div>
+					        <div class="item">
+					          <p>I am afraid that my children will not value all the things I have done for them</p>
+					     		<div class="quit-people">
+					     			<h4><a href="#"> Woman with fears of having a child</a></h4>
+					     			<span>insight: Our memory book shows all the thought that went into pregnancy planning</span>
+					     		</div>
+					       </div>
+					        <div class="item">
+					          <p>buying clothes for our baby isn’t an issue because everyone wants to donate...I’m laughing at how “buy baby food” is on there when you really do that 6 months in…this wasn’t made by a mom</p>
+					     		<div class="quit-people">
+					     			<h4><a href="#"> Robert Leonaro</a></h4>
+					     			<span>insight: app must be made by moms with highly durated content to build trust</span>
+					     		</div>
+					       </div>
+					       <div class="item">
+					          <p>I was afraid of missing the big steps...you know! We were sure that we would mess up</p>
+					     		<div class="quit-people">
+					     			<h4><a href="#"> Mother of 2</a></h4>
+					     			<span>insight: We have to provide a set structure of steps with the abilitiy to add more</span>
+					     		</div>
+					       </div>
+					         <div class="item">
+					          <p>All pregnancy apps and baby books focus on after the kid is born...nothing out there focuses on the 9 months.</p>
+					     		<div class="quit-people">
+					     			<h4><a href="#"> Mother of 1</a></h4>
+					     			<span>insight: this is an underserved time</span>
+					     		</div>
+					       </div>
+				         </div>
+				         </div>
+					</div>
+				<!--//people-says-->
+				<!--FEATURED-->
+				<!-- <div class="featured">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>FEATURED IN<span class="second"> </span></h3>
+					</div>
+						<script>
+							    $(document).ready(function() {
+							      $("#owl-demo2").owlCarousel({
+							        items : 5,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        pagination : false,
+							      });
+							    });
+						 </script>
+						<div id="owl-demo2" class="owl-carousel">
+					       <div class="item">
+					       		<img src="images/brand-logo1.png" title="the verge" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo2.png" title="Mashable" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo3.png" title="TNW" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo4.png" title="bribble" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo1.png" title="the verge" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo1.png" title="the verge" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo2.png" title="Mashable" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo3.png" title="TNW" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo4.png" title="bribble" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo1.png" title="the verge" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo1.png" title="the verge" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo2.png" title="Mashable" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo3.png" title="TNW" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo4.png" title="bribble" />
+					       </div>
+					       <div class="item">
+					       		<img src="images/brand-logo1.png" title="the verge" />
+					       </div>
+						</div>
+			</div> -->
+			<!--FEATURED-->
+			
+			
+			
+	</body>
+</html>
+
