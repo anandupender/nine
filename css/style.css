@@ -14,6 +14,11 @@ body a{
 iframe{
 	margin:40px;
 }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*-----start-header----*/
 .header{
